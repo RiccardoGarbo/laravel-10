@@ -8,6 +8,9 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    
+    @foreach ($movies as $movie )
+    <p>{{$movie}}</p>
+        
+    @endforeach
 </body>
 </html>
