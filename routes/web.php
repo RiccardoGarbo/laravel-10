@@ -15,4 +15,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/card', HomeController::class)->name('includes.card');
 

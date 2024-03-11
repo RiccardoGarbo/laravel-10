@@ -10,8 +10,8 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
-        $movies = Movie::all();
+        $movies = Movie::first();
 
-    return view('home' , compact('movies'));
+    return view('includes.card' , compact('movies'));
 }
 }
