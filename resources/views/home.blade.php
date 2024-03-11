@@ -9,8 +9,7 @@
 </head>
 <body>
     @foreach ($movies as $movie )
-    <p>{{$movie}}</p>
-        
+    @include('includes.card')    
     @endforeach
 </body>
 </html>

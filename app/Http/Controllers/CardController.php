@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Models\Movie;
 
-class HomeController extends Controller
+class CardController extends Controller
 {
     public function __invoke()
     {
-        $movies = Movie::all();
+        $movie = Movie::first();
 
-    return view('home' , compact('movies'));
+    return view('includes.card' , compact('movie'));
 }
 }
